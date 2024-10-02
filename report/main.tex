@@ -1,0 +1,27 @@
+\documentclass{article}
+
+% Importing settings from our file "setup.sty"
+\usepackage{setup}
+
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./Sections/}{title}
+
+% Inserting table of contents
+\tableofcontents
+
+% Inserting list of figures & list of tables
+\listoffigures
+\listoftables
+
+% Introduction explaining this LaTeX-template
+\import{./Sections/}{Introduction}
+
+% Printing bibliography
+\newpage
+
+% End of document
+\end{document}
