@@ -1,27 +1,24 @@
-\documentclass{article}
+\documentclass[12pt,a4paper]{article}
 
-% Importing settings from our file "setup.sty"
-\usepackage{setup}
+% Package for including graphics
+\usepackage{graphicx}
 
+% Package for mathematics
+\usepackage{amsmath, amssymb}
 
-% Beginning of document
+% Package for bibliography management
+\usepackage{cite}
+
+% Package for hyperlinking references
+\usepackage{hyperref}
 \begin{document}
 
-% Inserting title page
-\import{./Sections/}{title}
+\input{Sections/01title}
 
-% Inserting table of contents
-\tableofcontents
+\input{Sections/02Introduction}
+\cite{author2020book}
 
-% Inserting list of figures & list of tables
-\listoffigures
-\listoftables
+\bibliographystyle{plain}
+\bibliography{references} % Reference file
 
-% Introduction explaining this LaTeX-template
-\import{./Sections/}{Introduction}
-
-% Printing bibliography
-\newpage
-
-% End of document
 \end{document}
