@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper, twocolumn]{article}
 
 % Package for including graphics
 \usepackage{graphicx}
@@ -13,11 +13,19 @@
 \usepackage{hyperref}
 \begin{document}
 
-\input{Sections/01title}
+%Title page
+\input{Sections/00title}
 
-\input{Sections/02Introduction}
+%Sections
+\input{Sections/01Introduction}
+\input{Sections/02Method}
+\input{Sections/03Results}
+\input{Sections/04Discussion}
+\input{Sections/05Conclusion}
 \cite{author2020book}
 
+%Bibliography
+\onecolumn
 \bibliographystyle{plain}
 \bibliography{references} % Reference file
 
